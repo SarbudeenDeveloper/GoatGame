@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-area {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border: 5px solid #333;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.road {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, #444 10%, #555 90%);
+    animation: moveRoad 1s linear infinite; */
+    background-size: 100% 100%;
+    background-image: url("./assets/road.jpg");
+}
+
+/* @keyframes moveRoad {
+    0% { background-position-y: 0; }
+    100% { background-position-y: 100%; }
+} */
+
+.goat {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    /* background-color: blue; */
+    bottom: 20px;
+    left: 125px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.goat img {
+    transform: scale(2);
+}
+
+.object {
+    position: absolute;
+    width: 70px;
+    height: 150px;
+    top: -50px; /* Start off screen */
+}
+
+.leaf {
+    /* background-color: gold; */
+    border-radius: 50%;
+    display: flex;
+}
+
+.bike {
+    /* background-color: red; */
+    border-radius: 10%;
+    display: flex;
+}
+
+.score {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #333;
+    padding: 5px 10px;
+}
